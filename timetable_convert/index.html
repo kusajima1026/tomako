@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td class="s2"></td>
+                
+                <td class="s2">月</td>
+                <td class="s2">火</td>
+                <td class="s2">水</td>
+                <td class="s2">木</td>
+                <td class="s2">金</td>
+            </tr>
+
+            <tr><td rowspan="2" class="s1 en">1</td></tr>
+
+            <tr>
+                <td>
+                    <select id="MON1" onchange="set_timetable()">
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="TUE1" onchange="set_timetable()">
+                        <option value="1">体育</option>
+                        <option value="0">公共</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="WED1" onchange="set_timetable()">
+                        <option value="2">気回</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="THU1" onchange="set_timetable()">
+                        <option value="3">科人</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>         <select id="FRI1" onchange="set_timetable()">
+                        <option value="4">LHR</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><td rowspan="2" class="s1 en">2</td></tr>
+
+            <tr>
+                <td>
+                    <select id="MON2" onchange="set_timetable()">
+                        <option value="5">CI</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="TUE2" onchange="set_timetable()">
+                        <option value="2">気回</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="WED2" onchange="set_timetable()">
+                        <option value="6">現国</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="THU2" onchange="set_timetable()">
+                        <option value="7">数I</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="FRI2" onchange="set_timetable()">
+                        <option value="6">現国</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><td rowspan="2" class="s1 en">3</td></tr>
+
+            <tr>
+                <td>
+                    <select id="MON3" onchange="set_timetable()">
+                        <option value="8">HD</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="TUE3" onchange="set_timetable()">
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="WED3" onchange="set_timetable()">
+                        <option value="5">CI</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="THU3" onchange="set_timetable()">
+                        <option value="2">気回</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="FRI3" onchange="set_timetable()">
+                        <option value="1">体育</option>
+                        <option value="0">公共</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><td rowspan="2" class="s1 en">4</td></tr>
+
+            <tr>
+                <td>
+                    <select id="MON4" onchange="set_timetable()">
+                        <option value="9">工基</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="TUE4" onchange="set_timetable()">
+                        <option value="7">数I</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="WED4" onchange="set_timetable()">
+                        <option value="7">数I</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="THU4" onchange="set_timetable()">
+                        <option value="1">体育</option>
+                        <option value="0">公共</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="FRI4" onchange="set_timetable()">
+                        <option value="10">保健</option>
+                        <option value="0">共</option>
+                        <option value="1">育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="11"> 美術</option>
+                        <option value="12"> 情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><td rowspan="2" class="s1 en">5</td></tr>
+
+            <tr>
+                <td>
+                    <select id="MON5" onchange="set_timetable()">
+                        <option value="9">工基</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="TUE5" onchange="set_timetable()">
+                        <option value="11">美術</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="WED5" onchange="set_timetable()">
+                        <option value="12">情数</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="THU5" onchange="set_timetable()">
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="FRI5" onchange="set_timetable()">
+                        <option value="3">科人</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><td rowspan="2" class="s1 en">6</td></tr>
+
+            <tr>
+                <td>
+                    <select id="MON6" onchange="set_timetable()">
+                        <option value="9">工基</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="TUE6" onchange="set_timetable()">
+                        <option value="11">美術</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="WED6" onchange="set_timetable()">
+                        <option value="12">情数</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="THU6" onchange="set_timetable()">
+                        <option value="5">CI</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="6">現国</option>
+                        <option value="7">数I</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="FRI6" onchange="set_timetable()">
+                        <option value="7">数I</option>
+                        <option value="0">公共</option>
+                        <option value="1">体育</option>
+                        <option value="2">気回</option>
+                        <option value="3">科人</option>
+                        <option value="4">LHR</option>
+                        <option value="5">CI</option>
+                        <option value="6">現国</option>
+                        <option value="8">HD</option>
+                        <option value="9">工基</option>
+                        <option value="10">保健</option>
+                        <option value="11">美術</option>
+                        <option value="12">情数</option>
+                        <option value="a">[空白]</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="output" style="margin-left:1.5em;"></h2>
+
+    <script src="main.js"></script>
+</body>
+</html>
